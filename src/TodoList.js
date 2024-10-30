@@ -1,8 +1,7 @@
-
-function TodoList(){
+import './TodoList.css';
+function TodoList({children}){
     return(
-        <input placeholder="app nueva"/>
+        <ul className="TodoList">{children}</ul>
     );
-  }
-  
-  export {TodoList}
+}
+export{TodoList};
